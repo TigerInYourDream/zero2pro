@@ -5,15 +5,15 @@ use zero2prod::run;
 #[tokio::main]
 async fn main() -> Result<(), std::io::Error> {
     let setting =
-        zero2prod::configration::get_configuration().expect("Failed to read configuration.");
-    let listener = TcpListener::bind(format!("0.0.0.0:{}", setting.application_port))?;
+        zero2prod::configration::get_configuration().unwrap();
+    let listener = TcpListener::bind(format!("{}:{}", setting.application.host,setting.application.port))?;
     let database_url = format!(
         "postgresql://{}:{}@{}:{}/{}",
         setting.database.username,
         setting.database.password,
         setting.database.host,
         setting.database.port,
-        setting.database.database_name
+        setting.database.db_name
     );
 
     let db = Database::connect(database_url).await.unwrap();

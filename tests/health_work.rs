@@ -27,7 +27,7 @@ async fn spwan_app() {
         setting.database.password,
         setting.database.host,
         setting.database.port,
-        setting.database.database_name
+        setting.database.db_name
     );
 
     let db = Database::connect(database_url).await.unwrap();

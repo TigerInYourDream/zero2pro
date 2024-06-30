@@ -1,8 +1,0 @@
-application_port = 3000
-
-[database]
-username = "postgres"
-password = "password"
-port = 5432
-host = "localhost"
-database_name = "newsletter"
