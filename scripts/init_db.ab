@@ -1,0 +1,50 @@
+let DB_USER = "postgres"
+let DB_PASSWORD = "password"
+let DB_NAME = "newsletter"
+let DB_HOST = "localhost"
+let DB_PORT= "5432"
+let CONTAINER= "pg_zero2pro"
+
+let is_docker = $ docker ps -a | grep {CONTAINER} | awk '\{print \$11}' $ failed {
+    echo "docker is not installed"
+}
+
+if is_docker == CONTAINER {
+    echo "postgres container is already running"
+} else {
+    echo "create postgres container"
+    $docker run \
+        -e POSTGRES_USER={DB_USER} \
+        -e POSTGRES_PASSWORD={DB_PASSWORD} \
+        -e POSTGRES_DB={DB_NAME} \
+        -p {DB_PORT}:5432 \
+        --name {CONTAINER} \
+        -d postgres \
+        postgres -N 1000 \
+        $ failed {
+            echo "failed to start postgres container"
+        }
+}
+
+let pgpassword = DB_PASSWORD
+
+// $psql -h {DB_HOST} -U {DB_USER} -p {DB_PORT}" -d "postgres" -c '\q' $ failed {
+//     echo "failed to connect to postgres"
+// }
+
+let DATABASE_URL = "postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+
+$export DATABASE_URL={DATABASE_URL} $ failed {
+    echo "failed to export DATABASE_URL"
+}
+
+$sea-orm-cli migrate init$ failed {
+    echo "failed to sea-orm initialize migration"
+}
+
+echo DATABASE_URL
+
+// $sqlx migrate run --database_url {DATABASE_URL} $ failed {
+//     echo "failed to run migration"
+// }
+

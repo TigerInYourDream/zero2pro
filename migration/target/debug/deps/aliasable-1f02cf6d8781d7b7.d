@@ -1,0 +1,11 @@
+/Users/zhaoyue/workspace/zero2prod/migration/target/debug/deps/libaliasable-1f02cf6d8781d7b7.rmeta: /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/lib.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/mut_ref.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/boxed.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/string.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/vec.rs
+
+/Users/zhaoyue/workspace/zero2prod/migration/target/debug/deps/libaliasable-1f02cf6d8781d7b7.rlib: /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/lib.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/mut_ref.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/boxed.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/string.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/vec.rs
+
+/Users/zhaoyue/workspace/zero2prod/migration/target/debug/deps/aliasable-1f02cf6d8781d7b7.d: /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/lib.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/mut_ref.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/boxed.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/string.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/vec.rs
+
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/lib.rs:
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/mut_ref.rs:
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/boxed.rs:
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/string.rs:
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/aliasable-0.1.3/src/vec.rs:

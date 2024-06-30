@@ -1,0 +1,11 @@
+/Users/zhaoyue/workspace/zero2prod/migration/target/debug/deps/libeither-328bb268708cad5d.rmeta: /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/lib.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/serde_untagged.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/serde_untagged_optional.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/iterator.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/into_either.rs
+
+/Users/zhaoyue/workspace/zero2prod/migration/target/debug/deps/libeither-328bb268708cad5d.rlib: /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/lib.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/serde_untagged.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/serde_untagged_optional.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/iterator.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/into_either.rs
+
+/Users/zhaoyue/workspace/zero2prod/migration/target/debug/deps/either-328bb268708cad5d.d: /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/lib.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/serde_untagged.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/serde_untagged_optional.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/iterator.rs /Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/into_either.rs
+
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/lib.rs:
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/serde_untagged.rs:
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/serde_untagged_optional.rs:
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/iterator.rs:
+/Users/zhaoyue/.cargo/registry/src/index.crates.io-6f17d22bba15001f/either-1.13.0/src/into_either.rs:
