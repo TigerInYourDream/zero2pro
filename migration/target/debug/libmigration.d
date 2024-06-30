@@ -1,1 +1,0 @@
-/Users/zhaoyue/workspace/zero2prod/migration/target/debug/libmigration.rlib: /Users/zhaoyue/workspace/zero2prod/migration/src/lib.rs /Users/zhaoyue/workspace/zero2prod/migration/src/m20240629_000001_create_subscriptions.rs

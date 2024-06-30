@@ -1,1 +1,0 @@
-{"rustc":4224806300782897453,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[2907236233865768043,"build_script_build",false,3489307494597631921]],"local":[{"Precalculated":"2.8.0"}],"rustflags":["-C","link-arg=-fuse-ld=/opt/homebrew/opt/llvm/bin/ld64.lld"],"metadata":0,"config":0,"compile_kind":0}
