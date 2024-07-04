@@ -20,7 +20,7 @@ async fn health_check_work() {
 async fn spwan_app() {
     let setting =
         zero2prod::configration::get_configuration().expect("Failed to read configuration.");
-    let listener = TcpListener::bind(format!("0.0.0.0:{}", setting.application_port)).unwrap();
+    let listener = TcpListener::bind(format!("0.0.0.0:{}", setting.application.port)).unwrap();
     let database_url = format!(
         "postgresql://{}:{}@{}:{}/{}",
         setting.database.username,

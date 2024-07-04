@@ -1,4 +1,5 @@
 use anyhow::Result;
+use secrecy::Secret;
 use serde::Deserialize;
 
 #[derive(Deserialize)]
@@ -10,13 +11,13 @@ pub struct AppSetting {
 #[derive(Deserialize)]
 pub struct Application {
     pub port: u16,
-    pub host: String
+    pub host: String,
 }
 
 #[derive(Deserialize)]
 pub struct DatabaseSettings {
     pub username: String,
-    pub password: String,
+    pub password: Secret<String>,
     pub port: u16,
     pub host: String,
     pub db_name: String,
@@ -27,7 +28,6 @@ pub fn get_configuration() -> Result<AppSetting> {
         config::ConfigError::Message(format!("Failed to determine current directory: {}", err))
     })?;
     let configuration_directory = base_path.join("config");
-    println!("Configuration directory: {:?}", configuration_directory);
 
     // Detect the running environment.
     // Default to `local` if unspecified.
@@ -39,12 +39,12 @@ pub fn get_configuration() -> Result<AppSetting> {
     let environment_filename = format!("{}.yaml", environment.as_str());
 
     let settings = config::Config::builder()
-        .add_source(
-            config::File::from(configuration_directory.join("base.yaml"))
-        )
-        .add_source(
-            config::File::from(configuration_directory.join(environment_filename))
-        )
+        .add_source(config::File::from(
+            configuration_directory.join("base.yaml"),
+        ))
+        .add_source(config::File::from(
+            configuration_directory.join(environment_filename),
+        ))
         .build()?;
     Ok(settings.try_deserialize::<AppSetting>()?)
 }

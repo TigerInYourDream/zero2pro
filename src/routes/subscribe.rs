@@ -1,6 +1,7 @@
-use actix_web::{web, HttpResponse, Responder};
+use actix_web::{http::header::HeaderMap, web, HttpRequest, HttpResponse, Responder};
 use anyhow::Result;
 use sea_orm::{ActiveModelTrait, ActiveValue::NotSet, DatabaseConnection, Set};
+use secrecy::Secret;
 use serde::Deserialize;
 
 use crate::entities;
@@ -47,4 +48,21 @@ pub async fn insert_sub(
         .save(pool)
         .await
         .map_err(|e| anyhow::anyhow!(e.to_string()))
+}
+
+pub async fn publish_newsletter(
+    // [...]
+    // New extractor!
+    request: HttpRequest,
+) -> HttpResponse {
+    let _credentials = basic_authentication(request.headers());
+    // [...]
+    todo!()
+}
+struct Credentials {
+    username: String,
+    password: Secret<String>,
+}
+fn basic_authentication(headers: &HeaderMap) -> Result<Credentials, anyhow::Error> {
+    todo!()
 }

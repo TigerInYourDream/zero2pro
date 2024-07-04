@@ -43,8 +43,3 @@ $sea-orm-cli migrate init$ failed {
 }
 
 echo DATABASE_URL
-
-// $sqlx migrate run --database_url {DATABASE_URL} $ failed {
-//     echo "failed to run migration"
-// }
-
