@@ -4,7 +4,7 @@ use sea_orm::Database;
 
 #[tokio::test]
 async fn health_check_work() {
-    spwan_app();
+    spawn_app().await;
     let client = reqwest::Client::new();
 
     let response = client
@@ -17,12 +17,12 @@ async fn health_check_work() {
     assert_eq!(Some(0), response.content_length())
 }
 
-async fn spwan_app() {
+async fn spawn_app() {
     let setting =
-        zero2prod::configration::get_configuration().expect("Failed to read configuration.");
+        zero2prod::configuration::get_configuration().expect("Failed to read configuration.");
     let listener = TcpListener::bind(format!("0.0.0.0:{}", setting.application.port)).unwrap();
     let database_url = format!(
-        "postgresql://{}:{}@{}:{}/{}",
+        "postgresql://{}:{:?}@{}:{}/{}",
         setting.database.username,
         setting.database.password,
         setting.database.host,
@@ -32,5 +32,5 @@ async fn spwan_app() {
 
     let db = Database::connect(database_url).await.unwrap();
     let server = zero2prod::run(listener, db).expect("Failed to bind address.");
-    let _ = tokio::spawn(server);
+    tokio::spawn(server);
 }

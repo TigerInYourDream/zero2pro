@@ -7,7 +7,7 @@ use time::macros::offset;
 use tracing_actix_web::TracingLogger;
 use tracing_rolling::{Checker, Daily};
 
-pub mod configration;
+pub mod configuration;
 mod entities;
 mod routes;
 

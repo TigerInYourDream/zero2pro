@@ -46,6 +46,7 @@ pub fn get_configuration() -> Result<AppSetting> {
             configuration_directory.join(environment_filename),
         ))
         .build()?;
+
     Ok(settings.try_deserialize::<AppSetting>()?)
 }
 

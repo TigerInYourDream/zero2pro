@@ -59,10 +59,13 @@ pub async fn publish_newsletter(
     // [...]
     todo!()
 }
+
+#[allow(dead_code)]
 struct Credentials {
     username: String,
     password: Secret<String>,
 }
 fn basic_authentication(headers: &HeaderMap) -> Result<Credentials, anyhow::Error> {
+    let _ = headers;
     todo!()
 }

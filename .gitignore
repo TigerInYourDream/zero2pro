@@ -1,5 +1,3 @@
 /target
 /migration/target
-/logs
 *.log
-logs

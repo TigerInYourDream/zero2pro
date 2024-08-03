@@ -5,7 +5,7 @@ use zero2prod::run;
 
 #[tokio::main]
 async fn main() -> Result<(), std::io::Error> {
-    let setting = zero2prod::configration::get_configuration().unwrap();
+    let setting = zero2prod::configuration::get_configuration().unwrap();
     let listener = TcpListener::bind(format!(
         "{}:{}",
         setting.application.host, setting.application.port

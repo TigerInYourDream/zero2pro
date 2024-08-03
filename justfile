@@ -22,3 +22,5 @@ docker-build:
 
 docker-run:
     docker run --network host -d --name zero2prod-server zero2prod
+
+docker run --rm -it -v $(pwd):/io -w /io messense/cargo-zigbuild  cargo zigbuild --release --target x86_64-pc-windows-msvc
